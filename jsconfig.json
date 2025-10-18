@@ -1,0 +1,12 @@
+//jsconfig.json
+{
+ "compilerOptions": {
+   "target": "es5",
+   "lib": ["es5", "dom"],
+   "types": ["cypress", "@badeball/cypress-cucumber-preprocessor"]
+ },
+ "include": [
+   "cypress/**/*.js",
+   "cypress/**/*.feature"
+ ]
+}
