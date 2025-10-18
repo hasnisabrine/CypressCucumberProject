@@ -18,9 +18,9 @@ Then("user redirects to Add Employee page", () => {
 
 When("remplir les champs obligatoires et clicker sur save", (datatable) => {
   datatable.hashes().forEach((element) => {
-    cy.get('[name="firstName"]').type(element.FirstName); //enlever les espace
-    cy.get('[name="middleName"]').type(element.MiddleName);
-    cy.get('[name="lastName"]').type(element.LastName);
+    cy.get('[name="firstName"]').type(element.First_Name); //enlever les espace
+    cy.get('[name="middleName"]').type(element.Middle_Name);
+    cy.get('[name="lastName"]').type(element.Last_Name);
     cy.get('[type="submit"]').should("be.enabled").click({ force: true });
   });
 });
